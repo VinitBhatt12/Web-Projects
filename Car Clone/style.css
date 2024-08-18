@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#left{
+    width: 45%;
+    height: 100%;
+    position: relative;
+    background-image: url(https://images.unsplash.com/photo-1500485035595-cbe6f645feb1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80);
+    background-position: center;
+    background-size: cover;
+}
+
+#right{
+    width: 55%;
+    height: 100%;
+}
+#rup{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+#rupl{
+    width: 55%;
+    height: 100%;
+    /* background-image: url(https://images.unsplash.com/photo-1552089123-2d26226fc2b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80); */
+    background-image: url(https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+    background-position: center;
+    background-size: cover;
+}
+
+#rupr{
+    width: 45%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1471479917193-f00955256257?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fGNhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60);
+    background-position: center;
+    background-size: cover;
+}
+#rdown{
+    width: 100%;
+    height: 50%;
+    background-image: url(https://images.unsplash.com/photo-1542362567-b07e54358753?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+    background-position: center;
+    background-size: cover;
+}
+
+#nav{
+    padding: 30px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+#nav a{
+    text-decoration: none;
+    color: black;
+    margin-right:15px ;
+    border-bottom: 1px solid #222;
+}
+#navl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#navl i{
+    color: #0AA5F6;
+}
+#text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* gap: 30px; */
+}
+#text p{
+    margin: 15PX 0px;
+    opacity: .6;
+}
+#text a{
+    color: #222;
+    text-decoration: none;
+    border-bottom:1px solid #222 ;
+    opacity: .9;
+    padding-bottom: 1px;
+}
+
+@media(max-width:500px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+}

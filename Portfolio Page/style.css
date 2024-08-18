@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #081b29;
+    color: white;
+}
+
+.navbar{
+    /* background-color: yellow; */
+    position: fixed;
+    /* top: 0; */
+    /* left: 0; */
+    padding: 20px 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    justify-content: space-between;
+}
+
+.nav-items{
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 30px;
+}
+
+.nav-items a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.nav-items a:hover{
+    color: #00abf0;
+}
+
+.compony-logo img{
+    width: 100px;
+}
+
+.home{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    height: 100vh;
+    padding: 0 10%;
+}
+
+.home-content{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    gap: 20px;
+}
+
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+}
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+.home-content p{
+    font-size: 16px;
+}
+
+.btn-box{
+    width: 345px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: yel    lowgreen; */
+}
+
+.btn-box a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    /* background-color: #00abf0; */
+    border: 2px solid #00abf0;
+    border-radius: 6px;
+    font-size: 19px;
+    color: #00abf0;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.btn-box a:nth-child(1){
+    background-color: #00abf0;
+    color: #081b29;
+}
+
+.btn-box a:nth-child(2):hover{
+    /* width: 100%; */
+    background-color: #00abf0;
+    color: #081b29;
+    transition-duration: .1s;
+}
+.btn-box a:nth-child(1):hover{
+    background-color: transparent;
+    color: #00abf0;
+    transition-duration: .1s;
+}
+
+.home-sci{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+}
+
+.home-sci a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    border-radius: 50px;
+    border: 1px solid #00abf0;
+    height: 40px;
+    text-decoration: none;
+}
+
+.home-sci a:hover{
+    animation-name: first;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    /* animation-direction: alternate; */
+}
+
+@keyframes first{
+    from{
+        background-color: transparent;
+        /* background-size: 0; */
+    }
+    to{
+        /* background-size: 100%; */
+        background-color: #00abf0;
+        color: #081b29;
+    }
+}
